@@ -114,10 +114,17 @@ img{max-width:100%;display:block;}
   font-family:var(--font-display);font-weight:800;
   font-size:1.5rem;letter-spacing:.01em;line-height:1;
   display:block;
+  color:#fff;
+}
+.brand strong .brand-green{
+  color:#2f8f5a;
+}
+.brand strong .brand-white{
+  color:#fff;
 }
 .brand small{
   display:block;font-family:var(--font-mono);font-size:.62rem;
-  color:var(--steel);letter-spacing:.09em;margin-top:5px;text-transform:uppercase;
+  color:#000;letter-spacing:.09em;margin-top:5px;text-transform:uppercase;
 }
 .mark{
   width:44px;height:44px;border-radius:2px;
@@ -167,7 +174,6 @@ img{max-width:100%;display:block;}
 /* ---------- Readability over background image ---------- */
 body .utility-bar,
 body .utility-contacts a,
-body .brand small,
 body .links a,
 body .mobile-menu a,
 body .hero-copy .eyebrow,
@@ -222,7 +228,6 @@ body .form-panel .box p,
 body .utility-contacts a,
 body .links a,
 body .mobile-menu a,
-body .brand small,
 body .hero-stats span,
 body .service-card p,
 body .feature-list p,
@@ -560,9 +565,54 @@ a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,te
 .staff-card .staff-links a{color:var(--muted);transition:color .2s ease;}
 .staff-card .staff-links a:hover{color:var(--petrol);}
 .staff-card .staff-links svg{width:18px;height:18px;}
+body .staff-card .dept,
+body .staff-card .role{
+  color:var(--amber);
+}
 .staff-note{
   font-family:var(--font-mono);font-size:.82rem;color:var(--muted);
   background:var(--panel-2);border:1px dashed var(--line-strong);padding:16px 20px;border-radius:2px;margin-bottom:40px;
+}
+
+body .service-detail .service-heading span,
+body .service-detail .service-heading h2,
+body .service-detail p,
+body .service-detail li,
+body .service-detail li strong,
+body .service-card .code,
+body .service-card h3,
+body .service-card p,
+body .service-heading span,
+body .service-heading h2,
+body .service-detail .service-heading .icon{
+  color:#000;
+}
+body .contact-panel .box h2,
+body .contact-panel .box p,
+body .contact-panel .info-card strong,
+body .contact-panel .info-card p,
+body .form-panel .box h2,
+body .form-panel .box p,
+body .form-panel label,
+body .contact-panel .info-card,
+body .contact-panel .info-card .icon,
+body .contact-panel .info-card p a,
+body .form-panel input,
+body .form-panel select,
+body .form-panel textarea{
+  color:#000;
+}
+body .contact-panel .box p,
+body .contact-panel .info-card p,
+body .form-panel .box p,
+body .form-panel .form-row label,
+body .service-detail p,
+body .service-detail li,
+body .service-card p,
+body .staff-card p,
+body .staff-card .role,
+body .staff-card .dept{
+  opacity:1;
 }
 
 /* ---------- Responsive ---------- */
