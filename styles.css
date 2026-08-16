@@ -463,15 +463,15 @@ body .staff-card .role{
 .service-heading{display:flex;align-items:center;gap:16px;margin-bottom:18px;border-bottom:1px solid var(--line);padding-bottom:18px;}
 .service-heading .icon{color:var(--petrol);}
 .service-heading span{
-  font-family:var(--font-mono);font-size:.82rem;color:#000;font-weight:600;letter-spacing:.05em;
+  font-family:var(--font-mono);font-size:.82rem;color:var(--petrol);font-weight:600;letter-spacing:.05em;
   white-space:nowrap;
 }
-.service-heading h2{font-family:var(--font-display);font-weight:700;font-size:clamp(1.3rem,2.4vw,1.65rem);line-height:1.15;color:#000;}
+.service-heading h2{font-family:var(--font-display);font-weight:700;font-size:clamp(1.3rem,2.4vw,1.65rem);line-height:1.15;color:var(--petrol);}
 .service-detail p{color:#000;max-width:760px;}
 .service-detail ul{margin-top:18px;display:grid;gap:11px;max-width:760px;}
 .service-detail li{position:relative;padding-left:20px;color:#000;}
 .service-detail li::before{content:"";position:absolute;left:0;top:.6em;width:8px;height:1px;background:var(--amber);}
-.service-detail li strong{color:#000;font-weight:600;}
+.service-detail li strong{color:var(--petrol);font-weight:600;}
 
 /* ---- Contact ---- */
 .contact-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:1px;background:var(--line-strong);border:1px solid var(--line-strong);align-items:stretch;}
@@ -576,15 +576,15 @@ body .staff-card .role{
 
 body .service-detail .service-heading span,
 body .service-detail .service-heading h2,
-body .service-detail p,
-body .service-detail li,
 body .service-detail li strong,
-body .service-card .code,
-body .service-card h3,
-body .service-card p,
 body .service-heading span,
 body .service-heading h2,
 body .service-detail .service-heading .icon{
+  color:var(--petrol);
+}
+body .service-detail p,
+body .service-detail li,
+body .service-card p{
   color:#000;
 }
 body .contact-panel .box h2,
