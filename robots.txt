@@ -1,5 +1,2 @@
-User-agent: *
-Allow: /
-
-# Replace with the real domain once the site is deployed, then uncomment:
+# Replace with the real domain once the site is deployed, then uncommit:
 # Sitemap: https://www.ecoflowenergy.co.bw/sitemap.xml

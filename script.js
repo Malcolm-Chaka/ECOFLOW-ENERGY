@@ -53,22 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
     revealEls.forEach(el => el.classList.add('visible'));
   }
 
-  /* ---- Route-line draw-in (manifest chain diagram) ---- */
-  const routeLines = document.querySelectorAll('.route-line');
-  if ('IntersectionObserver' in window && routeLines.length) {
-    const routeIO = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('drawn');
-          routeIO.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.4 });
-    routeLines.forEach(el => routeIO.observe(el));
-  } else {
-    routeLines.forEach(el => el.classList.add('drawn'));
-  }
-
   /* ---- Animated stat counters ---- */
   const counters = document.querySelectorAll('[data-count]');
   if ('IntersectionObserver' in window && counters.length) {
