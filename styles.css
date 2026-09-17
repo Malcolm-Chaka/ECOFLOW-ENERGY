@@ -481,6 +481,18 @@ body .staff-card .role{
 .contact-panel .info-card .icon{color:var(--petrol);margin-top:2px;}
 .contact-panel .info-card strong{margin-bottom:6px;color:#000;}
 .contact-panel .info-card p{color:#000;font-size:.95rem;}
+.contact-panel .info-card .contact-social-link{
+  display:inline-flex;align-items:center;gap:7px;min-height:34px;
+  color:var(--petrol-deep);font-weight:600;
+  border-bottom:1px solid rgba(8,63,66,.35);
+  transition:color .2s ease,border-color .2s ease,transform .2s ease;
+}
+.contact-panel .info-card .contact-social-link::after{
+  content:"\2197";color:var(--amber-deep);font-size:.9em;
+  transition:transform .2s ease;
+}
+.contact-panel .info-card .contact-social-link:hover{color:var(--amber-deep);border-color:currentColor;transform:translateX(2px);}
+.contact-panel .info-card .contact-social-link:hover::after{transform:translate(2px,-2px);}
 .map-frame{border:1px solid var(--line);margin-top:6px;}
 .map-frame iframe{width:100%;min-height:260px;border:none;display:block;filter:grayscale(.25) contrast(1.02);}
 
@@ -509,6 +521,17 @@ textarea{min-height:150px;resize:vertical;}
 .site-footer ul{display:grid;gap:10px;}
 .site-footer ul li a{color:#C9D6D0;font-size:.94rem;}
 .site-footer ul li a:hover{color:#fff;}
+.site-footer .footer-social-link{
+  display:inline-flex;align-items:center;gap:9px;min-height:34px;
+  width:max-content;max-width:100%;
+  transition:color .2s ease,transform .2s ease;
+}
+.site-footer .footer-social-link .icon{
+  width:18px;height:18px;color:var(--amber-soft);
+  transition:transform .2s ease;
+}
+.site-footer .footer-social-link:hover{transform:translateX(2px);}
+.site-footer .footer-social-link:hover .icon{transform:translateY(-1px);}
 .footer-seal{color:#8FAAA3;justify-self:end;}
 .footer-bottom{
   display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
@@ -656,6 +679,7 @@ body .staff-card .dept{
   .values-panel{grid-template-columns:1fr;}
   .process-strip{grid-template-columns:1fr;}
   .footer-grid{grid-template-columns:1fr;}
+  .site-footer .footer-social-link{min-height:44px;}
   .footer-bottom{flex-direction:column;}
   .hero-stats{grid-template-columns:1fr;}
   .hero-stats div{border-right:none;border-bottom:1px solid var(--line-strong);padding-bottom:16px;}
